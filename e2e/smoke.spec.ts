@@ -17,7 +17,7 @@ test('menu loads with every faction and starts a match', async ({ page }) => {
 test('every page carries the fan-content notice', async ({ page }) => {
   for (const route of ['./', './#/about', './#/decks', './#/collection', './#/scenario', './#/decks/new-mine']) {
     await page.goto(route);
-    await expect(page.getByText(/unofficial fan content/).first(), route).toBeVisible();
+    await expect(page.getByText(/This is an unofficial fan work and is not approved\/endorsed by CD PROJEKT RED/).first(), route).toBeVisible();
     await expect(page.getByRole('link', { name: 'CD PROJEKT RED Fan Content Guidelines' }).first()).toHaveAttribute('href', 'https://www.cdprojektred.com/en/fan-content');
   }
 });
