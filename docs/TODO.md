@@ -10,10 +10,12 @@ README.
 - [x] Create `BattyDev/batty-gwent`, push, CI green, `dist` published.
 - [ ] **Merge PR #19** (`claude/gwent-plan`) in BattyDev.github.io. That deploys
   `/gwent` and adds the home tile.
-- [ ] **Fan content notice: check the wording.** A notice is on every page
-  (`src/ui/notice.ts`), linking to the guidelines. It covers what they
-  require in substance, but their page couldn't be read from the build
-  environment. If it prescribes exact text, put that text in `NOTICE_TEXT`.
+- [x] Fan content notice: every page shows the guidelines' exact sentence
+  (`src/ui/notice.ts`).
+- [ ] **Know the guidelines' limits.** CD PROJEKT RED's Fan Content
+  Guidelines (section 3) ask fans not to make games based on theirs. This
+  is a personal, unshared project for now; ask legal@cdprojektred.com before
+  promoting it.
 - [ ] **Check the rules in `docs/VERIFY.md`** in the real game. Each item
   names a board to set up and what we currently assume.
 - [ ] Optional: add `SITE_DISPATCH_TOKEN` here so updates go live straight
